@@ -24,10 +24,11 @@ function App() {
     getMovie('')
   }, [])
   return (
-    <>
+    <Container>
      <Form movieSearch={getMovie}/>
      <MovieDisplay movie={movie}/>
-    </>
+
+    </Container>
   )
 }
 
