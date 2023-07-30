@@ -1,7 +1,8 @@
 import Form from "./components/Form"
 import MovieDisplay from "./components/MovieDisplay"
 import {useState, useEffect} from 'react'
-import { styled } from "styled-components"
+
+
 
 function App() {
 
@@ -24,11 +25,12 @@ function App() {
     getMovie('')
   }, [])
   return (
-    <Container>
+    // <Container>
+    <div>
      <Form movieSearch={getMovie}/>
      <MovieDisplay movie={movie}/>
-
-    </Container>
+     </div>
+    // </Container>
   )
 }
 
