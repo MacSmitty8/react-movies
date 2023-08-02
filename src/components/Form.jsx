@@ -19,12 +19,12 @@ const handleChange = (e) => {
     movieSearch(form.searchTerm);
   }
   return (
-    <div>
+
         <form onSubmit={handleSubmit}>
             <input type="text" value={form.searchTerm} onChange={handleChange} />
             <input type="submit" value="submit" />
         </form>
-    </div>
+       
   )
 }
 

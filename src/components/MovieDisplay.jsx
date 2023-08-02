@@ -5,6 +5,8 @@ const Container = styled.div`
   width: 80%;
   margin: auto;
   text-align: center;
+  background-color: black;
+  color: white;
 `
 
 const Title = styled.h1`
@@ -18,10 +20,12 @@ function MovieDisplay ({movie}) {
   const loaded = () => {
     return (
       <>
+      <Container className='div'>
         <Title>{movie.Title}</Title>
       <h2>{movie.Genre}</h2>
       <img src={movie.Poster} alt ={movie.Title}/>
       <h2>{movie.Year}</h2>
+      </Container>
       </>
     );
   };
